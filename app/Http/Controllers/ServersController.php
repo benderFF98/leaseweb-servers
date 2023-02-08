@@ -22,7 +22,7 @@ class ServersController extends Controller
                 ->location(request('location'))
                 ->paginate(request('per_page'));
 
-            return response()->json(['servers' => $servers]);
+            return response()->json([$servers]);
         } catch (Exception $exception) {
             Log::error($exception);
             throw new ModelNotFoundException();

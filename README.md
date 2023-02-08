@@ -25,6 +25,9 @@ composer install
 ./vendor/bin/sail test
 ```
 
+6. Para testar a API, basta acessar importar o arquivo leaseweb dentro da pasta insomnia no projeto e testar as rotas configuradas lá, as buscas dentro da rota index funcionam como full text search, então é necessário apenas digitar o resultado que é desejado, e o mesmo será filtrado.
+
+
 _______________________________________________________________________________________________________________________________________________________________________
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
