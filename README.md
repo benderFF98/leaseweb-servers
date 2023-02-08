@@ -1,3 +1,31 @@
+Para rodar o projeto será necessário rodar os comandos na seguinte sequencia:
+
+1. Para garantiar que todas depencias sejam instaladas:
+```
+composer install
+```
+
+2. Para subir o ambiente em docker pelo sail(Necessita do docker rodando):
+```
+./vendor/bin/sail up -d --build
+```
+
+3. Realizar as migrations no banco de dados:
+```
+./vendor/bin/sail artisan migrate
+```
+
+4. Realizar as migrations no banco de dados de teste:
+```
+./vendor/bin/sail artisan --env=testing migrate
+```
+
+5. Para realizar testes(O arquivo xlsx de teste já esta incluso no projeto)
+```
+./vendor/bin/sail test
+```
+
+_______________________________________________________________________________________________________________________________________________________________________
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
